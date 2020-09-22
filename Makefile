@@ -22,6 +22,14 @@ yarn:
 generate:
 	docker-compose run --rm nuxt sh -c "yarn && yarn generate"
 
+.PHONY: lint
+lint:
+	docker-compose exec nuxt sh -c "yarn && yarn lint"
+
+.PHONY: lint-fix
+lint-fix:
+	docker-compose exec nuxt sh -c "yarn && yarn lint:fix"
+
 .PHONY: generate-ghpages
 generate-ghpages:
 	make generate
