@@ -17,7 +17,17 @@ sh:
 .PHONY: yarn
 yarn:
 	docker-compose exec nuxt sh -c "yarn && yarn dev"
-	
+
+.PHONY: generate
+generate:
+	docker-compose run --rm nuxt sh -c "yarn && yarn generate"
+
+.PHONY: generate-ghpages
+generate-ghpages:
+	make generate
+	[ -d "./docs" ] && rm -r ./docs || echo 'docs does not exist'
+	mv frontend/dist docs
+
 .PHONY: create-project
 create-project:
 	docker run \
