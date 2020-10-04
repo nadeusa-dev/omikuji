@@ -1,0 +1,89 @@
+body {
+  background-color: transparent;
+  background-image: radial-gradient(#f48fb1 3px, transparent 3px);
+  background-size: 30px 30px;
+
+  @media screen and (max-width: 767px) {
+    min-width: 320px;
+  }
+}
+
+.container {
+  display: block;
+  width: 1020px;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.contents {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.main-contents-wrap {
+  padding: 90px;
+  background-color: #fff;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 45px;
+  }
+}
+
+.title {
+  padding-bottom: 90px;
+  font-size: 50px;
+  color: #393939;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 45px;
+    font-size: 30px;
+  }
+}
+
+.wf-kosugi {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.content-btn {
+  display: inline-block;
+  min-width: 320px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    min-width: inherit;
+  }
+}
+
+.content-btn-link {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: -webkit-linear-gradient(left, #fa709a 0%, #fee140 100%);
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0, -2px);
+  transform: translate(0, -2px);
+  font-weight: bold;
+  line-height: 45px;
+  text-decoration: none;
+
+  &:hover {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    color: #fff;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+}
