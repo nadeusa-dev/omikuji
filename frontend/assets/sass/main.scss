@@ -29,7 +29,9 @@ body {
 
 .main-contents-wrap {
   padding: 90px;
+  min-height: 555px;
   background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
 
   @media screen and (max-width: 767px) {
@@ -40,7 +42,7 @@ body {
 .title {
   padding-bottom: 90px;
   font-size: 50px;
-  color: #393939;
+  color: #444;
 
   @media screen and (max-width: 767px) {
     padding-bottom: 45px;
@@ -65,7 +67,9 @@ body {
 .content-btn-link {
   display: block;
   padding: 10px 15px;
+  width: 100%;
   color: #fff;
+  font-size: 18px;
   border: 2px solid #fff;
   border-radius: 15px;
   background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
@@ -86,4 +90,10 @@ body {
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
+}
+
+.result-text {
+  margin-bottom: 90px;
+  font-size: 24px;
+  white-space: pre-line;
 }

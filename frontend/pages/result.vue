@@ -1,11 +1,18 @@
 <template>
-  <div>
-    <h1>result</h1>
-    <div>{{ resultText }}</div>
-    <nuxt-link to="/">
-      トップへ
-    </nuxt-link>
+  <div class="container contents">
+    <div class="main-contents-wrap">
+      <h1 class="title wf-kosugi">
+        おみくじ結果
+      </h1>
+      <div class="result-text">{{ resultText }}</div>
+      <div class="content-btn">
+        <nuxt-link to="/" class="content-btn-link wf-kosugi">
+          おみくじを引き直す
+        </nuxt-link>
+      </div>
+    </div>
   </div>
+
 </template>
 
 <script>
