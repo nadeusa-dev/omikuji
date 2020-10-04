@@ -17,6 +17,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '@/assets/sass/main.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -35,8 +36,13 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-  ],
+  modules: [['nuxt-webfontloader', ], ],
+
+  webfontloader: {
+    google: {
+      families: ['Kosugi+Maru', ],
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
