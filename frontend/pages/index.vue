@@ -10,7 +10,7 @@
             class="content-btn-link wf-kosugi"
             @click="showResult"
           >
-            おみくじ
+            おみくじを引く
           </button>
         </div>
       </div>
