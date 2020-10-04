@@ -6,9 +6,12 @@
       </h1>
       <div class="content-wrap">
         <div class="content-btn">
-          <a class="content-btn-link wf-kosugi" href="">
+          <button
+            class="content-btn-link wf-kosugi"
+            @click="showResult"
+          >
             おみくじ
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -16,5 +19,14 @@
 </template>
 
 <script>
-export default {}
+import { generateRandomHash } from '@/src/omikuji'
+
+export default {
+  methods: {
+    showResult () {
+      const hash = generateRandomHash()
+      this.$router.push(`/result?r=${hash}`)
+    },
+  },
+}
 </script>
