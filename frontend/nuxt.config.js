@@ -36,11 +36,15 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [['nuxt-webfontloader', ], ],
+  modules: [
+    'nuxt-webfontloader',
+  ],
 
   webfontloader: {
     google: {
-      families: ['Kosugi+Maru', ],
+      families: [
+        'Kosugi+Maru',
+      ],
     },
   },
 
