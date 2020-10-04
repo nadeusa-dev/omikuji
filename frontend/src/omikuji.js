@@ -15,6 +15,7 @@ export function getResultFromHash (hash) {
 // おみくじ結果に対応するハッシュ値を、ランダムに1つ生成する.
 export function generateRandomHash () {
   const results = getResults()
+  // resultsのindexをランダムで1つ生成
   const randomIndex = Math.floor(Math.random() * results.length)
 
   return generateHash(randomIndex)
