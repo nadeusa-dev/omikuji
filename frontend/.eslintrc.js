@@ -15,15 +15,6 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'comma-dangle': [
-      'error',
-      {
-        arrays: 'always',
-        objects: 'always',
-        imports: 'never',
-        exports: 'never',
-        functions: 'never',
-      },
-    ],
+    'comma-dangle': 'off',
   },
 }

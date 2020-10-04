@@ -1,3 +1,5 @@
+CONTAINER_NAME := nuxt
+
 .PHONY: up
 up:
 	docker-compose up
@@ -12,23 +14,23 @@ down-v:
 
 .PHONY: sh
 sh:
-	docker-compose run --rm nuxt sh
+	docker-compose run --rm ${CONTAINER_NAME} sh
 
 .PHONY: yarn
 yarn:
-	docker-compose exec nuxt sh -c "yarn && yarn dev"
+	docker-compose exec ${CONTAINER_NAME} sh -c "yarn && yarn dev"
 
 .PHONY: generate
 generate:
-	docker-compose run --rm nuxt sh -c "yarn && yarn generate"
+	docker-compose run --rm ${CONTAINER_NAME} sh -c "yarn && yarn generate"
 
 .PHONY: lint
 lint:
-	docker-compose exec nuxt sh -c "yarn && yarn lint"
+	docker-compose exec ${CONTAINER_NAME} sh -c "yarn && yarn lint"
 
 .PHONY: lint-fix
 lint-fix:
-	docker-compose exec nuxt sh -c "yarn && yarn lint:fix"
+	docker-compose exec ${CONTAINER_NAME} sh -c "yarn && yarn lint:fix"
 
 .PHONY: generate-ghpages
 generate-ghpages:
